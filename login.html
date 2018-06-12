@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录</title>
+    <link rel="stylesheet" type="text/css" href="css/login.css"/>
+</head>
+<body>
+<!-- login-top	 -->
+<div class="login-top">
+	<div class="login-logo">
+		<img src="img/login.png"/>
+	</div>
+	<div class="login-english">
+		<a target="_blank" href="https://en.damai.cn/?spm=a211rg.193253.1012363.2.376e7de2zIKimZ">English</a>
+	</div>
+</div>
+<!-- login-content -->
+<div class="login-content">
+	<div class="login-content-left-box">
+		<img src="img/login-content.jpg">
+	</div>
+	<div class="login-content-box" >
+		<div class="login-content-box-top" id="menu">
+			<span class="active">密码登录</span>
+			<span>短信登录</span>
+			<span>扫描登录</span>
+        </div>
+        <form>
+	        <div class="login-content-box-bot" id="content">
+	           <!--  密码登录> -->
+					<div class="active" id="ft">
+						<input class="numoremil" type="text" value="请输入手机号或邮箱"/><img class="font1" src="img/numoremil.png"/>
+						<input class="mima" type="password" placeholder="请输入密码"/><img class="font2" src="img/mima1.png"/>
+						<input class="login" type="submit"  value="登录"/>
+						<span class="other-login">
+							<a href="https://open.weixin.qq.com/connect/qrconnect?appid=wx864b5cdda9161678&redirect_uri=http%3A%2F%2Fopen.damai.cn%2FUniversallyAPI%2Fbridge.aspx%3FtargetUrl%3Dhttps%253A%252F%252Fipassport.damai.cn%252Foauth_sign.htm%253Ftype%253Dweixin%2526return_url%253Dhttps%25253A%25252F%25252Fpassport.damai.cn%25252Fdologin.htm%25253FredirectUrl%25253Dhttps%2525253A%2525252F%2525252Fwww.damai.cn%2525252F%252526platform%25253D106002&response_type=code&state=eyJhY3Rpb24iOiJXSU5ET1ciLCJhcHBFbnRyYW5jZSI6ImRhbWFpIiwiYXBwTmFtZSI6ImRhbWFpIiwibGFuZyI6InpoX0NOIiwibG9naW5TdWNSZXN1bHRBY3Rpb24iOiJsb2dpblJlc3VsdCIsIm1vYmlsZSI6ZmFsc2UsInN0YXRlIjoiNDQxOTA0MjA3Nzg5NGQzYTkxNjdlNGFlODg2OGUzZTciLCJ0b2tlbiI6ImlkY18xb3VWdlJ1cE5OMHotNnBXOXdYYTcydyJ9&scope=snsapi_login#wechat_redirect">
+							  <img src="img/weixin-login.png"/>
+							</a>
+							<a href="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&client_id=206444&redirect_uri=http%3A%2F%2Fopen.damai.cn%2FUniversallyAPI%2Fbridge.aspx%3FtargetUrl%3Dhttps%253A%252F%252Fipassport.damai.cn%252Foauth_sign.htm%253Ftype%253Dqq%2526return_url%253Dhttps%25253A%25252F%25252Fpassport.damai.cn%25252Fdologin.htm%25253FredirectUrl%25253Dhttps%2525253A%2525252F%2525252Fwww.damai.cn%2525252F%252526platform%25253D106002&response_type=code&state=eyJhY3Rpb24iOiJXSU5ET1ciLCJhcHBFbnRyYW5jZSI6ImRhbWFpIiwiYXBwTmFtZSI6ImRhbWFpIiwibGFuZyI6InpoX0NOIiwibG9naW5TdWNSZXN1bHRBY3Rpb24iOiJsb2dpblJlc3VsdCIsIm1vYmlsZSI6ZmFsc2UsInN0YXRlIjoiNDQxOTA0MjA3Nzg5NGQzYTkxNjdlNGFlODg2OGUzZTciLCJ0b2tlbiI6ImlkY18xRDhJTXZFV3FmX2R5YXBlcnhGbktBdyJ9&scope=get_user_info,list_album,upload_pic,add_album,add_one_blog,add_topic,add_share,check_page_fans,add_t,del_t,add_pic_t,get_repost_list,get_info,get_other_info,get_fanslist,get_idollist,add_idol,del_idol">
+							    <img src="img/qq-login.png"/>
+							</a>
+							<a href="https://api.weibo.com/oauth2/authorize?client_id=1596475520&redirect_uri=http%3A%2F%2Fopen.damai.cn%2FUniversallyAPI%2Fbridge.aspx%3FtargetUrl%3Dhttps%253A%252F%252Fipassport.damai.cn%252Foauth_sign.htm%253Ftype%253Dweibo%2526return_url%253Dhttps%25253A%25252F%25252Fpassport.damai.cn%25252Fdologin.htm%25253FredirectUrl%25253Dhttps%2525253A%2525252F%2525252Fwww.damai.cn%2525252F%252526platform%25253D106002&response_type=code&state=eyJhY3Rpb24iOiJXSU5ET1ciLCJhcHBFbnRyYW5jZSI6ImRhbWFpIiwiYXBwTmFtZSI6ImRhbWFpIiwibGFuZyI6InpoX0NOIiwibG9naW5TdWNSZXN1bHRBY3Rpb24iOiJsb2dpblJlc3VsdCIsIm1vYmlsZSI6ZmFsc2UsInN0YXRlIjoiNDQxOTA0MjA3Nzg5NGQzYTkxNjdlNGFlODg2OGUzZTciLCJ0b2tlbiI6ImlkY18xYWF4RVFOQ0hNaEJ0eS1hd191dllmdyJ9">
+								<img src="img/weibo.png"/>
+							</a>
+							<a href="https://auth.alipay.com/login/index.htm?goto=https%3A%2F%2Fopenauth.alipay.com%3A443%2Foauth2%2FpublicAppAuthorize.htm%3Fapp_id%3D2015111800825875%26scope%3Dauth_user%26redirect_uri%3Dhttp%253A%252F%252Fopen.damai.cn%252FUniversallyAPI%252Fbridge.aspx%253FtargetUrl%253Dhttps%25253A%25252F%25252Fipassport.damai.cn%25252Foauth_sign.htm%25253Ftype%25253Dalipay%252526return_url%25253Dhttps%2525253A%2525252F%2525252Fpassport.damai.cn%2525252Fdologin.htm%2525253FredirectUrl%2525253Dhttps%252525253A%252525252F%252525252Fwww.damai.cn%252525252F%25252526platform%2525253D106002%26state%3DeyJhY3Rpb24iOiJXSU5ET1ciLCJhcHBFbnRyYW5jZSI6ImRhbWFpIiwiYXBwTmFtZSI6ImRhbWFpIiwibGFuZyI6InpoX0NOIiwibG9naW5TdWNSZXN1bHRBY3Rpb24iOiJsb2dpblJlc3VsdCIsIm1vYmlsZSI6ZmFsc2UsInN0YXRlIjoiNDQxOTA0MjA3Nzg5NGQzYTkxNjdlNGFlODg2OGUzZTciLCJ0b2tlbiI6ImlkY18xQ1BGVkxlQ0I2dmotanBNVXpuZFZVQSJ9">
+								<img src="img/zfb.png"/>
+							</a>
+                        </span>
+                        <span class="zhuceandmima">
+                        	<a>忘记密码</a>
+                        	<a>免费注册</a>
+                        </span>
+						
+					</div>
+				<!-- 短信登录class="message-login" -->
+					<div id="message-login">
+						<input class="mobile" type="text" value="请输入手机号"/><img class="font3" src="img/mobile.png"/>
+						<input class="check-code" type="text" value="请输入验证码"/><img class="font4" src="img/check-code.png"/>
+						<input class="login" type="submit"  value="登录"/>
+					</div>
+				<!-- 扫描登录class="Sweep-code-login" -->	
+					<div class="Sweep-code-login">
+						
+						
+				    </div>
+				
+			</div>
+		<form> 
+	</div>
+</div>
+<div class="footer">
+</div>
+
+</body>
+<script>
+    var menu = document.getElementById('menu');
+	var menuSpan = Array.from( menu.children );
+	var content = document.getElementById('content');
+	var contentDiv = Array.from( content.children );
+    menuSpan.forEach((v, k) => {
+		v.onclick = function () {
+			menuSpan.forEach(n => n.className = '');
+			this.className = 'active';
+			contentDiv.forEach(n => n.style.display = 'none');
+			contentDiv[k].style.display ='block';
+		};
+	});
+
+</script>

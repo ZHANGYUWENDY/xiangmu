@@ -2,10 +2,839 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>大麦网</title>
+	<title>首页</title>
+	<link rel="stylesheet" href="css/swiper.min.css">
+	
+    <link rel="stylesheet" type="text/css" href="css/index.css"/>
 </head>
 <body>
-	<div id="box">
+	<!-- header -->
+	<div class="header">
+
+		<!-- 左边 -->
+		<ul class="lefheader">
+			<li class="weldm"><span class="dm-name">HI, 欢迎来大麦[登录，注册]</span></li>
+			<li class="mydamai">
+				<div class="mydm"><a target="_blank" href="https://passport.damai.cn/login?ru=http://my.damai.cn/?spm=a2o6e.home.0.0.591b48d3XxKGZF">我的大麦<img src="img/mydaimai.png"/></a></div>
+                <div class="myinfo">
+			        <a title="个人信息" target="_blank" href="https://passport.damai.cn/accountinfo/myinfo?spm=a2o6e.home.0.0.591b48d3Y3hgLX">个人信息</a>
+			        <a title="订单管理" target="_blank" href="https://order.damai.cn/index.aspx?spm=a2o6e.home.0.0.591b48d3Y3hgLX">订单管理</a>
+			        <a title="我的钱包" target="_blank" href="https://wallet.damai.cn/ewallet-front-web/accountAccess/myEwallet">我的钱包</a>
+			        <a title="我的订阅" target="_blank" href="https://my.damai.cn/account/mysubscribe?spm=a2o6e.home.0.0.591b48d3Y3hgLX">我的订阅</a>
+				    <a title="我的优惠券" target="_blank" href="https://coupon.damai.cn/coupon-web-damai/mycoupon/myCoupon?spm=a2o6e.home.0.0.591b48d3Y3hgLX">我的优惠券</a>
+                </div>
+			</li>
+			<li class="myorder">
+				<div class="dmmyorder"><a target="_blank" href="https://order.damai.cn/index.aspx?spm=a2o6e.home.0.0.591b48d3Y3hgLX">我的订单</a></div>
+			</li>
+		</ul>
+        <!-- 右边 -->
+		<ul class="righeader">
+			<li class="dm-weixin">
+				<div class="dmweixin-t"><a href="javascript:void(0)">大麦网微信</a></div>
+			    <div class="dmweixin-c">
+			    	<img src="img/kehuduan.png"/>
+					
+				</div>
+			</li>
+			<li class="dm-app">
+				<div class="dm-t"><a target="_blank" href="//mobile.damai.cn/">手机版</a></div>
+	        	<div class="dm-c">
+	        		<img src="img/app.png"/>
+					<!-- <div class="dm-code">
+						<p class="t1">扫描我，即刻下载</p>
+						<p class="t2">大麦客户端</p>
+					</div>
+					<a class="dm-iphone" target="_blank" href="//mapi.damai.cn/href.aspx?id=1"></a>
+					<a class="dm-ipad" target="_blank" href="//mapi.damai.cn/href.aspx?id=2"></a>
+					<a class="dm-android" target="_blank" href="//mapi.damai.cn/href.aspx?id=5"></a>
+					<a class="dm-wp" target="_blank" href="//www.windowsphone.com/zh-cn/store/app/%E5%A4%A7%E9%BA%A6/c7194979-6d1e-4698-9df9-8a1ac7970151"></a>
+					<div class="dm-code-m">
+						<p class="t1">
+							手机扫一扫<br>下单更快捷</p>
+						<p class="t2">大麦M站</p>
+					</div> -->
+	            </div>
+			</li>
+			<li class="custservice">
+				<div class="customer"><a target="_blank" href="https://passport.damai.cn/login?ru=http://my.damai.cn/?spm=a2o6e.home.0.0.591b48d3XxKGZF">客户服务&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/mydaimai.png"/></a></div>
+                <div class="dmcustomer">
+			        <a title="账户服务" target="_blank" href="https://passport.damai.cn/accountinfo/myinfo?spm=a2o6e.home.0.0.591b48d3Y3hgLX">账户服务</a>
+			        <a title="人工服务" target="_blank" href="https://order.damai.cn/index.aspx?spm=a2o6e.home.0.0.591b48d3Y3hgLX">人工服务</a>
+			        <a title="特色产品" target="_blank" href="https://wallet.damai.cn/ewallet-front-web/accountAccess/myEwallet">特色产品</a>
+			        <a title="帮助中心" target="_blank" href="https://my.damai.cn/account/mysubscribe?spm=a2o6e.home.0.0.591b48d3Y3hgLX">帮助中心</a>
+				    <a title="在线客服" target="_blank" href="https://coupon.damai.cn/coupon-web-damai/mycoupon/myCoupon?spm=a2o6e.home.0.0.591b48d3Y3hgLX">在线客服</a>
+                </div>
+				
+			</li>
+			<li class="dm-site-nav">
+				<div class="inter-nav"><a href="#">网站导航&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/mydaimai.png"/></a></div>
+				<div class="inter-nav-city">
+				</div>
+			</li>
+			<li class="english">
+				<div class="dmenglish"><a target="_blank" href="https://en.damai.cn/?spm=a2o6e.home.0.0.591b48d3IEFMtu">english</a></div>
+			</li>
+		</ul>
+
+    </div>
+    <div class="header-border-bottom">
 	</div>
+    <!--  search -->
+    <div class="search">
+	    <div class="header-w">
+	    	<a href="https://www.damai.cn/?spm=a2o6e.home.0.0.c84e48d3Yd6i9a" class="dm-logo">
+	    		<img src="img/damailogo.png" alt="大麦网">
+	    	</a>
+	    	<!-- 选择城市 -->
+	    	<div class="dm-citys">
+            	<div class="dm-citys-change">
+      				<div class="dm-ct">全国<i></i></div>
+      				<div class="dm-nom"><a target="_blank" href="https://www.damai.cn/bj/?spm=a2o6e.home.0.0.32b648d391z7st">推荐进入北京站</a></div>
+      				<!-- <div class="ri-con">
+        				<span class="ri-t">
+           				 当前全国共有<i>4761</i>场演出（比赛），城市后数字代表演出场次
+       					</span>
+        				<a href="javascript:void(0)" class="ri-close">关闭</a>
+      				</div>
+
+      				<div class="bt-infos">
+        				<dl class="resent bg-col" id="recentCities" style="display:none;">
+          					<dt>近期访问&nbsp;&gt;</dt>
+          						<dd></dd>
+        				</dl>
+				  		<dl>
+          					<dt>华北东北&nbsp;&gt;</dt>
+         					<dd>
+            					<ul>
+                            		<li><a href="//www.damai.cn/bj/" target="_blank">北京</a><cite>721</cite></li>
+                                    <li><a href="//www.damai.cn/xa/" target="_blank">西安</a><cite>133</cite></li>
+                                    <li><a href="//www.damai.cn/jn/" target="_blank">济南</a><cite>65</cite></li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+	    <!--搜索 start-->
+	  	<div class="dm-search">
+	    	<div class="search-main" id="searchMain">
+	      		<input type="text" autocomplete="off" value="请输入演出、艺人、场馆名称..." class="search-text" id="searchText" data-keyword="" data-link="">
+		    	<button class="search-btn" type="button" id="search">搜索</button>
+	     		<div id="searchRelate" class="search-relate" style="display:none;"></div>
+	    	</div>
+		 <!-- 	<script type="text/javascript">var searchSuggestions = []</script> -->
+	   		<div class="dm-recommend">
+		        <a target="_blank" href="https://piao.damai.cn/151912.html?spm=a2o6e.home.0.0.591b48d3JGlssJ">阿凡达</a>
+		        <a target="_blank" href="https://search.damai.cn/search.html?keyword=%E5%AD%9F%E4%BA%AC%E8%BE%89">孟京辉</a>
+		        <a target="_blank" href="https://search.damai.cn/search.html?keyword=%E4%BA%91%E5%8D%97%E6%98%A0%E8%B1%A1">云南映象</a>
+		        <a target="_blank" href="https://search.damai.cn/search.html?keyword=%E5%BC%A0%E5%AD%A6%E5%8F%8B">张学友</a>
+	        </div>
+	    </div>
+	  <!--搜索 end-->
+	</div>
+	<!-- nav -->
+	<div class="nav">
+	    <a target="_blank" href="#">全部商品分类</a>
+		<a target="_blank" href="#">戏剧</a>
+		<a target="_blank" href="#">体育</a>
+		<a target="_blank" href="#">亲子</a>
+		<a target="_blank" href="#">摇滚</a>
+		<a target="_blank" href="#">舞蹈</a>
+	</div>
+	<!-- 轮播图 -->
+	<div class="swiper-container">
+	    <div class="swiper-wrapper">
+	      	<div class="swiper-slide"><img src="img/banner4.jpg"/></div>
+	      	<div class="swiper-slide"><img src="img/banner2.jpg"/></div>
+	      	<div class="swiper-slide"><img src="img/banner3.jpg"/></div>
+	      	<div class="swiper-slide"><img src="img/banner4.jpg"/></div>
+	      	<div class="swiper-slide"><img src="img/banner5.jpg"/></div>
+	    </div>
+    	<!-- Add Pagination豆豆 -->
+        <!-- <div class="swiper-pagination"></div> -->
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    <!-- 二级菜单导航-->
+    <div class="second-menu-navigation">
+    	<div class="nav_left">
+			<ul>
+				<li data-id="1"> <span>演唱会</span><img src="img/nav_left-logo.png"/></li>
+				<li data-id="2"> <span>音乐会</span><img src="img/nav_left-logo.png"/></li>
+				<li data-id="3"> <span>曲苑杂坛</span><img src="img/nav_left-logo.png"/></li>
+				<li data-id="4"> <span>话剧歌剧</span><img src="img/nav_left-logo.png"/></li>
+				<li data-id="5"> <span>体育比赛</span><img src="img/nav_left-logo.png"/></li>
+				<li data-id="6"> <span>舞蹈芭蕾</span><img src="img/nav_left-logo.png"/></li>
+				<li data-id="7"> <span>度假休闲</span><img src="img/nav_left-logo.png"/></li>
+				<li data-id="8"> <span>儿童亲子</span></li>
+				<li data-id="9"> <span>动漫</span></li>
+			</ul>
+	    </div>
+	</div>
+    <!-- 二级菜单显示 -->
+    <div class="nav_right">
+    	<div class="sub hide" data-id="1">
+			<dl>
+				<dt><a >演唱会<i> &gt;</i></a>  </dt>
+				<dd>
+					<a>流行</a>
+					<a>摇滚</a>
+					<a>民族</a>
+					<a>音乐节</a>
+				</dd>
+			</dl>
+		</div>
+		<div class="sub hide" data-id="2">
+			<dl>
+				<dt><a >音乐会<i> &gt;</i></a>  </dt>
+				<dd>
+					<a>流行</a>
+					<a>摇滚</a>
+					<a>民族</a>
+					<a>音乐节</a>
+				</dd>
+			</dl>
+		</div>
+		<div class="sub hide" data-id="3">
+			<dl>
+				<dt><a >曲苑杂坛<i> &gt;</i></a>  </dt>
+				<dd>
+					<a>流行</a>
+					<a>摇滚</a>
+					<a>民族</a>
+					<a>音乐节</a>
+				</dd>
+			</dl>
+		</div>
+		<div class="sub hide" data-id="4">
+			<dl>
+				<dt><a >音乐会<i> &gt;</i></a>  </dt>
+				<dd>
+					<a>流行</a>
+					<a>摇滚</a>
+					<a>民族</a>
+					<a>音乐节</a>
+				</dd>
+			</dl>
+		</div>
+		<div class="sub hide" data-id="5">
+			<dl>
+				<dt><a >音乐会<i> &gt;</i></a>  </dt>
+				<dd>
+					<a>流行</a>
+					<a>摇滚</a>
+					<a>民族</a>
+					<a>音乐节</a>
+				</dd>
+			</dl>
+		</div>
+		<div class="sub hide" data-id="6">
+			<dl>
+				<dt><a >音乐会<i> &gt;</i></a>  </dt>
+				<dd>
+					<a>流行</a>
+					<a>摇滚</a>
+					<a>民族</a>
+					<a>音乐节</a>
+				</dd>
+			</dl>
+		</div>
+		<div class="sub hide" data-id="7">
+			<dl>
+				<dt><a >音乐会<i> &gt;</i></a>  </dt>
+				<dd>
+					<a>流行</a>
+					<a>摇滚</a>
+					<a>民族</a>
+					<a>音乐节</a>
+				</dd>
+			</dl>
+		</div>
+    </div>
+<!-- guess 猜你喜欢 今日推荐 即将开售预售-->
+	<div class="guess">
+		<div class="guess-top">
+			<div class="guess-top-lef">
+				<span id="guess1" class="guess-item" >猜你喜欢</span>
+				<span id="guess2" class="guess-item" >今日推荐</span>
+				<span id="guess3" class="guess-item" >即将开售预售</span>
+			</div>
+			<div class="guess-top-rig">换一换</div>
+        </div>
+		<div class="guess-bot" id="guess1-bot" name="guess">
+			<ul class="pic">
+				<a target="_blank" href="#"></a>
+				<li>音乐剧《芝加哥》</li>
+				<p class="price">票价：<span>¥100.0</span> 起</p>
+			</ul>
+			<ul class="pic">
+				<a target="_blank" href="#"></a>
+				<li>音乐剧《芝加哥》</li>
+				<p class="price">票价：<span>¥100.0</span> 起</p>
+			</ul>
+			<ul class="pic">
+				<a target="_blank" href="#"></a>
+				<li>音乐剧《芝加哥》</li>
+				<p class="price">票价：<span>¥100.0</span> 起</p>
+			</ul>
+			<ul class="pic">
+				<a target="_blank" href="#"></a>
+				<li>音乐剧《芝加哥》</li>
+				<p class="price">票价：<span>¥100.0</span> 起</p>
+			</ul>
+			<ul class="pic">
+				<a target="_blank" href="#"></a>
+				<li>音乐剧《芝加哥》</li>
+				<p class="price">票价：<span>¥100.0</span> 起</p>
+			</ul>
+			<ul class="pic">
+				<a target="_blank" href="#"></a>
+				<li>音乐剧《芝加哥》</li>
+				<p class="price">票价：<span>¥100.0</span> 起</p>
+			</ul>
+        </div>
+
+        <div class="guess-bot" id="guess2-bot" name="guess">
+			<ul class="pic">
+				<a target="_blank" href="#"></a>
+				<li>长安大剧院</li>
+				<p class="price">票价：<span>¥100.0</span> 起</p>
+			</ul>
+			<ul class="pic">
+				<a target="_blank" href="#"></a>
+				<li>长安大剧院</li>
+				<p class="price">票价：<span>¥100.0</span> 起</p>
+			</ul>
+			<ul class="pic">
+				<a target="_blank" href="#"></a>
+				<li>长安大剧院</li>
+				<p class="price">票价：<span>¥100.0</span> 起</p>
+			</ul>
+			<ul class="pic">
+				<a></a>
+				<li>长安大剧院</li>
+				<p class="price">票价：<span>¥100.0</span> 起</p>
+			</ul>
+			<ul class="pic">
+				<a></a>
+				<li>长安大剧院</li>
+				<p class="price">票价：<span>¥100.0</span> 起</p>
+			</ul>
+			<ul class="pic">
+				<a></a>
+				<li>长安大剧院</li>
+				<p class="price">票价：<span>¥100.0</span> 起</p>
+			</ul>
+        </div>
+
+        <div class="guess-bot" id="guess3-bot" name="guess">
+			<ul class="pic">
+				<a></a>
+				<li>太阳马戏阿凡达前传</li>
+				<p class="price">票价：<span>¥100.0</span> 起</p>
+			</ul>
+			<ul class="pic">
+				<a></a>
+				<li>太阳马戏阿凡达前传</li>
+				<p class="price">票价：<span>¥100.0</span> 起</p>
+			</ul>
+			<ul class="pic">
+				<a></a>
+				<li>太阳马戏阿凡达前传</li>
+				<p class="price">票价：<span>¥100.0</span> 起</p>
+			</ul>
+			<ul class="pic">
+				<a></a>
+				<li>太阳马戏阿凡达前传</li>
+				<p class="price">票价：<span>¥100.0</span> 起</p>
+			</ul>
+			<ul class="pic">
+				<a></a>
+				<li>太阳马戏阿凡达前传</li>
+				<p class="price">票价：<span>¥100.0</span> 起</p>
+			</ul>
+			<ul class="pic">
+				<a></a>
+				<li>太阳马戏阿凡达前传</li>
+				<p class="price">票价：<span>¥100.0</span> 起</p>
+			</ul>
+        </div>
+    </div>
+    <!-- 防骗秘籍 专题频道 一票一证 -->
+    <div class="point">
+    	<ul class="point-lef">
+    		<li>
+    			<img src="img/point-lef.png"/>
+    		</li>
+        </ul>
+    	<ul class="point-cet">
+    		<li>
+    			<img src="img/point-cet.png"/>
+    		</li>
+        </ul>
+    	<ul class="point-rig">
+    		<li>
+    			<img src="img/point-rig.png"/>
+    		</li>
+    	</ul>
+    </div>
+   <!--  图片推荐pic-recommend -->
+    <div class="pic-recom">
+	   	<div class="lef-pic-recom">
+	   		<div class="cen-box">
+	   			<ul class="first-pic"><img src="img/first-pic.jpg"/>
+	   				<li class="smallbox">草莓音乐节</li>
+	   			</ul>
+	   			<ul class="second-box">
+	   				<li>
+	   					<img src="img/pic3.jpg"/>
+                        <img class="pic4" src="img/pic4.png"/>
+	   				</li>
+	   				<li>
+	   					<img src="img/pic4.jpg"/>
+                    </li>
+	   				<li>
+	   					<img src="img/pic3.jpg"/>
+                        <img class="pic4"src="img/pic3.jpg"/>
+	   				</li>
+	   			</ul>
+	   			<ul class="third-box">
+	   				<li>
+	   					<img src="img/pic5.png"/>
+	   				</li>
+	   				<li>
+	   					<img src="img/pic6.png"/>
+	   				</li>
+                </ul>
+                <ul class="forth-box">
+                	<li>
+	   					<img src="img/pic7.png"/>
+	   				</li>
+	   				<li>
+	   					<img src="img/pic7.png"/>
+	   				</li>
+	   				<li>
+	   					<span class="more">更多演出</span>
+	   				</li>
+                </ul>	
+
+	   		</div>
+	   	</div>
+	   	<div class="rig-pic-recom">
+	   		<img src="img/rig-pic.jpg"/>
+	   	</div>
+    </div>
+    <!--  周边城市city-recommend -->
+    <div class="city-recom">
+    	<div class="lef-city-recom">
+    		<div class="lef-city-top">
+    			<span class="guess-left">北京猜你想看北京周边的演出及赛事&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[其他城市]</span>
+    			<span class="enter">目前北京共有休闲娱乐内容715个，进入<a target="_blank" href="#">北京站>></a></span>
+    		</div>
+    		<div class="lef-city-cet">
+    			<ul>
+    				<span class="hot-city"><p>城市热词</p></span>
+    				<li>
+    					<a target="_blank" href="#">猫</a>
+    					<a target="_blank" href="#">吉屋出租</a>
+    					<a target="_blank" href="#">国家地理</a>
+    				</li>
+    			</ul>
+    			<ul>
+    				<span class="hot-city"><p>城市热馆</p></span>
+    				<li>
+    					<a target="_blank" href="#">北京音乐厅</a>
+    					<a target="_blank" href="#">大麦·超剧场</a>
+    					<a target="_blank" href="#">梅兰芳大剧院</a>
+    					<a target="_blank" href="#">正乙祠戏楼</a>
+    					<a target="_blank" href="#">梅兰芳大剧院</a>
+    					<a target="_blank" href="#">北京音乐厅</a>
+    					<a target="_blank" href="#">保利剧院</a>
+    					<a target="_blank" href="#">梅兰芳大剧院</a>
+    				</li>
+    			</ul>
+    	    </div>
+    		<div class="lef-city-bot">
+    			<ul>
+    				<li id="ticket1" class="ticket-item">演唱会</li>
+    				<li id="ticket2" class="ticket-item">音乐剧</li>
+    				<li id="ticket3" class="ticket-item">话剧歌剧</li>
+    				<li id="ticket4" class="ticket-item">曲苑杂坛</li>
+    				<li id="ticket5" class="ticket-item">体育比赛</li>
+    				<li id="ticket6" class="ticket-item">儿童亲子</li>
+    				<li id="ticket7" class="ticket-item">度假休闲</li>
+    			</ul>
+            </div>
+            <div class="city-hot" id="city1-hot">
+				<ul class="pic">
+					<a></a>
+					<li>音乐剧《芝加哥》</li>
+					<p class="price">票价：<span>¥100.0</span> 起</p>
+				</ul>
+				<ul class="pic">
+					<a></a>
+					<li>音乐剧《芝加哥》</li>
+					<p class="price">票价：<span>¥100.0</span> 起</p>
+				</ul>
+				<ul class="pic">
+					<a></a>
+					<li>音乐剧《芝加哥》</li>
+					<p class="price">票价：<span>¥100.0</span> 起</p>
+				</ul>
+		    </div>
+		    <div class="city-hot" id="city2-hot">
+				<ul class="pic">
+					<a></a>
+					<li>音乐剧《芝加哥》</li>
+					<p class="price">票价：<span>¥100.0</span> 起</p>
+				</ul>
+				<ul class="pic">
+					<a></a>
+					<li>音乐剧《芝加哥》</li>
+					<p class="price">票价：<span>¥100.0</span> 起</p>
+				</ul>
+				<ul class="pic">
+					<a></a>
+					<li>音乐剧《芝加哥》</li>
+					<p class="price">票价：<span>¥100.0</span> 起</p>
+				</ul>
+		    </div>
+		    <div class="city-hot" id="city3-hot">
+				<ul class="pic">
+					<a></a>
+					<li>音乐剧《芝加哥》</li>
+					<p class="price">票价：<span>¥100.0</span> 起</p>
+				</ul>
+				<ul class="pic">
+					<a></a>
+					<li>音乐剧《芝加哥》</li>
+					<p class="price">票价：<span>¥100.0</span> 起</p>
+				</ul>
+				<ul class="pic">
+					<a></a>
+					<li>音乐剧《芝加哥》</li>
+					<p class="price">票价：<span>¥100.0</span> 起</p>
+				</ul>
+		    </div>
+		    <div class="city-hot" id="city4-hot">
+				<ul class="pic">
+					<a></a>
+					<li>音乐剧《芝加哥》</li>
+					<p class="price">票价：<span>¥100.0</span> 起</p>
+				</ul>
+				<ul class="pic">
+					<a></a>
+					<li>音乐剧《芝加哥》</li>
+					<p class="price">票价：<span>¥100.0</span> 起</p>
+				</ul>
+				<ul class="pic">
+					<a></a>
+					<li>音乐剧《芝加哥》</li>
+					<p class="price">票价：<span>¥100.0</span> 起</p>
+				</ul>
+		    </div>
+		    <div class="city-hot" id="city5-hot">
+				<ul class="pic">
+					<a></a>
+					<li>音乐剧《芝加哥》</li>
+					<p class="price">票价：<span>¥100.0</span> 起</p>
+				</ul>
+				<ul class="pic">
+					<a></a>
+					<li>音乐剧《芝加哥》</li>
+					<p class="price">票价：<span>¥100.0</span> 起</p>
+				</ul>
+				<ul class="pic">
+					<a></a>
+					<li>音乐剧《芝加哥》</li>
+					<p class="price">票价：<span>¥100.0</span> 起</p>
+				</ul>
+		    </div>
+		    <div class="city-hot" id="city6-hot">
+				<ul class="pic">
+					<a></a>
+					<li>音乐剧《芝加哥》</li>
+					<p class="price">票价：<span>¥100.0</span> 起</p>
+				</ul>
+				<ul class="pic">
+					<a></a>
+					<li>音乐剧《芝加哥》</li>
+					<p class="price">票价：<span>¥100.0</span> 起</p>
+				</ul>
+				<ul class="pic">
+					<a></a>
+					<li>音乐剧《芝加哥》</li>
+					<p class="price">票价：<span>¥100.0</span> 起</p>
+				</ul>
+		    </div>
+		    <div class="city-hot" id="city7-hot">
+				<ul class="pic">
+					<a></a>
+					<li>音乐剧《芝加哥》</li>
+					<p class="price">票价：<span>¥100.0</span> 起</p>
+				</ul>
+				<ul class="pic">
+					<a></a>
+					<li>音乐剧《芝加哥》</li>
+					<p class="price">票价：<span>¥100.0</span> 起</p>
+				</ul>
+				<ul class="pic">
+					<a></a>
+					<li>音乐剧《芝加哥》</li>
+					<p class="price">票价：<span>¥100.0</span> 起</p>
+				</ul>
+		    </div>
+
+
+    	</div>
+    	<div class="rig-city-recom">
+    		<div class="rig-city-recom-top">
+    			<span id="city1" class="city-item">艺人</span>
+    			<span id="city2" class="city-item">场馆</span>
+    		</div>
+    		<div class="rig-city-recom-bot" id="recom1-city" name="city">
+    			<ul>
+    				<li><img src="img/http_imgload(1).jpg" style="width: 50px;height: 50px" /></li>
+    				<li>
+    					<span class="actor-name">反光镜乐队</span>
+    					<span class="subscribe-num">28186人订阅</span>
+    				</li>
+    				<li>订阅</li>
+    			</ul>
+    			<ul>
+    				<li><img src="img/http_imgload(1).jpg" style="width: 50px;height: 50px" /></li>
+    				<li>
+    					<span class="actor-name">反光镜乐队</span>
+    					<span class="subscribe-num">28186人订阅</span>
+    				</li>
+    				<li>订阅</li>
+    			</ul>
+    			<ul>
+    				<li><img src="img/http_imgload(1).jpg" style="width: 50px;height: 50px" /></li>
+    				<li>
+    					<span class="actor-name">反光镜乐队</span>
+    					<span class="subscribe-num">28186人订阅</span>
+    				</li>
+    				<li>订阅</li>
+    			</ul>
+    			<ul>
+    				<li><img src="img/http_imgload(1).jpg" style="width: 50px;height: 50px" /></li>
+    				<li>
+    					<span class="actor-name">反光镜乐队</span>
+    					<span class="subscribe-num">28186人订阅</span>
+    				</li>
+    				<li>订阅</li>
+    			</ul>
+    			<ul>
+    				<li><img src="img/http_imgload(1).jpg" style="width: 50px;height: 50px" /></li>
+    				<li>
+    					<span class="actor-name">反光镜乐队</span>
+    					<span class="subscribe-num">28186人订阅</span>
+    				</li>
+    				<li>订阅</li>
+    			</ul>
+    			<div class="change"><span>换一组</span></div>
+            </div>
+            <div class="rig-city-recom-bot" id="recom2-city" name="city">
+    			<ul>
+    				<li><img src="img/http_imgload(1).jpg" style="width: 50px;height: 50px" /></li>
+    				<li>
+    					<span class="actor-name">谢天笑</span>
+    					<span class="subscribe-num">28186人订阅</span>
+    				</li>
+    				<li>订阅</li>
+    			</ul>
+    			<ul>
+    				<li><img src="img/http_imgload(1).jpg" style="width: 50px;height: 50px" /></li>
+    				<li>
+    					<span class="actor-name">谢天笑</span>
+    					<span class="subscribe-num">28186人订阅</span>
+    				</li>
+    				<li>订阅</li>
+    			</ul>
+    			<ul>
+    				<li><img src="img/http_imgload(1).jpg" style="width: 50px;height: 50px" /></li>
+    				<li>
+    					<span class="actor-name">谢天笑</span>
+    					<span class="subscribe-num">28186人订阅</span>
+    				</li>
+    				<li>订阅</li>
+    			</ul>
+    			<ul>
+    				<li><img src="img/http_imgload(1).jpg" style="width: 50px;height: 50px" /></li>
+    				<li>
+    					<span class="actor-name">反光镜乐队</span>
+    					<span class="subscribe-num">28186人订阅</span>
+    				</li>
+    				<li>订阅</li>
+    			</ul>
+    			<ul>
+    				<li><img src="img/http_imgload(1).jpg" style="width: 50px;height: 50px" /></li>
+    				<li>
+    					<span class="actor-name">反光镜乐队</span>
+    					<span class="subscribe-num">28186人订阅</span>
+    				</li>
+    				<li>订阅</li>
+    			</ul>
+    			<div class="change"><span>换一组</span></div>
+            </div>
+    	</div>
+    </div>
+   <!--  1F -->
+    <div class="content-1f">
+
+    </div>
+   <!-- content-last -->
+    <div class="content-last">
+    </div>
+	<div class="content-last-center">
+		<ul>
+			<span>订购方式</span>
+			<li><a target="_blank" href="#">在线订购</a></li>
+			<li><a target="_blank" href="#">电话订购</a></li>
+			<li><a target="_blank" href="#">上门订购</a></li>
+		</ul>
+		<ul>
+			<span>订购方式</span>
+			<li><a target="_blank" href="#">在线订购</a></li>
+			<li><a target="_blank" href="#">电话订购</a></li>
+			<li><a target="_blank" href="#">上门订购</a></li>
+		</ul>
+		<ul>
+			<span>订购方式</span>
+			<li><a target="_blank" href="#">在线订购</a></li>
+			<li><a target="_blank" href="#">电话订购</a></li>
+	   	</ul>
+		<ul>
+			<span>订购方式</span>
+			<p><img src="img/kehuduan.png" /></p>
+		</ul>
+		<ul>
+			<span>订购方式</span>
+			<p><img src="img/kehuduan.png"/></p>
+		</ul>
+		<ul>
+			<span>订购方式</span>
+			<li><a target="_blank" href="#">在线订购</a></li>
+			<li><a target="_blank" href="#">电话订购</a></li>
+			<li><a target="_blank" href="#">上门订购</a></li>
+			<li><a target="_blank" href="#">上门订购</a></li>
+		</ul>
+		<ul>
+			<span>订购方式</span>
+			<li><a target="_blank" href="#">在线订购</a></li>
+			<li><a target="_blank" href="#">电话订购</a></li>
+			<li><a target="_blank" href="#">上门订购</a></li>
+		</ul>
+		<ul>
+			<span>订购方式</span>
+			<li><a target="_blank" href="#">在线订购</a></li>
+			<li><a target="_blank" href="#">电话订购</a></li>
+	   	</ul>
+    </div>
+    
+ <!--footer-->
+    <div class="footer">
+    	<div class="footer-nav">
+	    	<div class="footer-title"><a target="_blank" href="#">公司介绍</a><span></span></div>
+	        <div class="footer-title"><a target="_blank" href="#">品牌介绍</a><span></span></div>
+	        <div class="footer-title"><a target="_blank" href="#">品牌介绍</a><span></span></div>
+	        <div class="footer-title"><a target="_blank" href="#">品牌介绍</a><span></span></div>
+	        <div class="footer-title"><a target="_blank" href="#">品牌介绍</a><span></span></div>
+	        <div class="footer-title"><a target="_blank" href="#">品牌介绍</a><span></span></div>
+	        <div class="footer-title"><a target="_blank" href="#">品牌介绍</a><span></span></div>
+	        <div class="footer-title"><a target="_blank" href="#">品牌介绍</a><span></span></div>
+	        <div class="footer-title"><a target="_blank" href="#">品牌介绍</a><span></span></div>
+	        <div class="footer-title"><a target="_blank" href="#">品牌介绍</a></div>
+	    </div>
+    </div>
+    <div class="footer-bot">
+    	<div class="footerh6"><a target="_blank" href="#">京ICP证031057号&nbsp;&nbsp;&nbsp;|</a><a target="_blank" href="#">&nbsp;&nbsp;&nbsp;京ICP证031057号&nbsp;&nbsp;&nbsp;|</a><a target="_blank" href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;京ICP证031057号&nbsp;&nbsp;&nbsp;|</a><a target="_blank" href="#">&nbsp;&nbsp;&nbsp;京ICP证031057号</a></div>
+    	<div class="footerh6"><a target="_blank" href="#">网络文化经营许可证 京网文[2016]3438-413号&nbsp;&nbsp;&nbsp;|</a>
+    	<a target="_blank" href="#">&nbsp;&nbsp;&nbsp;营业性演出许可证 京市演587号&nbsp;&nbsp;&nbsp;|</a></div>
+
+    	<div class="footerh6"><a target="_blank" href="#">北京红马传媒文化发展有限公司 版权所有&nbsp;&nbsp;&nbsp;大麦网 &nbsp;&nbsp;&nbsp;Copyright 2003-2018 All Rights Reserved</a></div>
+
+    	<div class="foot-pic">
+    		<img src="img/foot-pic2.png">
+    	</div>
+    </div>
+   
+
 </body>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script> 
+<script src="js/swiper.min.js"></script>
+<script>
+    //导航栏
+    var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+    $(function() {
+		$('.second-menu-navigation').on('mouseenter', function() {
+			$(".nav_right").removeClass('hide');
+		}).on('mouseleave', function() {
+			$(".nav_right").addClass('hide');
+			$(".sub").addClass('hide');
+		}).on('mouseenter', 'li', function(e) {
+			var li_data = $(this).attr('data-id');
+			$(".sub").addClass('hide');
+			$('.sub[data-id="' + li_data + '"]').removeClass('hide');
+		});
+    });
+    //猜你喜欢
+    $(document).ready(function(){
+    	$(".guess-bot").hide();
+        $("#guess1-bot").show();//	默认显示
+        // $("#guess2-bot").hide();
+        // $("#guess3-bot").hide();
+
+		$(".guess-item").hover(function(){//	
+			$(".guess-bot").hide();//隐藏以前显示的内容
+			var i=$(this).attr("id");//获取ID
+			$("#"+i+"-bot").show();//拼
+		});
+	});
+    //周边城市右边
+	$(document).ready(function(){
+        $("#recom1-city").show();
+       
+        $(".city-item").hover(function(){//	
+			$(".rig-city-recom-bot").hide();//隐藏以前显示的内容
+			var i=$(this).attr("id");//获取ID
+			$("#"+i+"-city").show();//拼
+		});
+	});
+
+	$(document).ready(function(){
+    	
+        $("#city1-hot").show();//	默认显示
+
+		$(".ticket-item").hover(function(){//	
+			$(".city-hot").hide();//隐藏以前显示的内容
+			var i=$(this).attr("id");//获取ID
+			$("#"+i+"-hot").show();//拼
+		});
+	});
+
+ </script>
+
+
 </html>
+
